@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Generador de Tarjetas</title>
+        <link rel="stylesheet" href="Styles.css" />
+      </head>
+      <body>
+        <div class="container" >
+          <h1>Generador de Tarjetas de Presentación</h1>
+          <form id="cardForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required />
+
+            <label for="company">Empresa:</label>
+            <input type="text" id="company" name="company" required />
+
+            <label for="logo">URL del Logo:</label>
+            <input type="url" id="logo" name="logo" required />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <button type="button" onclick="generateCard()">
+              Generar Tarjeta
+            </button>
+          </form>
+
+          <div id="resultCard">
+            <div id="cardLayout">
+              <img id="cardLogo" src="" alt="Logo" />
+              <div id="cardInfo">
+                <h2 id="cardName"></h2>
+                <p id="cardTitle"></p>
+                <p id="cardCompany"></p>
+                <p id="cardEmail"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="Tarjeta.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
